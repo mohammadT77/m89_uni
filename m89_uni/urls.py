@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from edu.views import cookie_sample_view, session_sample_view
 
 urlpatterns = [
+    path('cookie_example/', cookie_sample_view),
+    path('session_example/', session_sample_view),
     path('admin/', admin.site.urls),
 ]
